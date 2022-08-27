@@ -129,7 +129,9 @@ namespace tic_tac_toe
 
             if (flag == 1)
             {
-                Console.WriteLine("player{0} has won", (player % 2) + 1);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n player{0} has won", (player % 2) + 1);
+                Console.ResetColor();
             }
             else
             {
